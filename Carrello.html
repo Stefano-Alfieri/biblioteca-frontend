@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleCarrello.css">
+    <link rel="stylesheet" media="only screen and (max-width: 641px)" href="styleSmallScreen.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styleCarrello.css">
     <script src="https://kit.fontawesome.com/e2d1d32d09.js" crossorigin="anonymous"></script>
-    <title>Carrello</title>
+    <title>Home</title>
 </head>
-<header >
+<header>
     <nav class="nav">
         <ul>
+            <div>
+                <li class="logo2"><a href="Home.html"><img src="media/logoBianco.png" class="logo" alt="logo"></a></li>
+            </div>
             <li><a href="Home.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
             <li><a href="libri.html">Libri</a></li>
@@ -21,14 +25,114 @@
                 <a href="Carrello.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
         </ul>
+        <div class="search">
+            <input type="submit" class="cerca" value="Cerca">
+        <input type="search" name="Cerca" id="cerca">
+        </div>
+        
     </nav>
+
 </header>
+
 <body>
-    
+    <br><br><br>
+
+    <h1>Carrello Libreria</h1>
+    <div class="cart">
+        <div class="articoli">
+            <div class="articoloCarrello">
+                <span>
+                    <img class="imgCarrello" src="https://placehold.co/140x160/orange/white" alt="Immagine libro nel carrello">
+                </span>
+                <div class="info">
+                    <p>Titolo: L'arte della guerra</p>
+                    <p>Autore: Sun Tzu</p>
+                    <p>Prezzo: €10,00</p>
+                </div>
+                <div class="dati">
+                    <p>Quantità: <input type="number" class="qnt" value="1" min="1"></p>
+                    <p>Totale: €10,00</p>
+                    <p><button class="rimuovi">Rimuovi</button></p>
+                </div>
+            </div>
+        
+            <div class="articoloCarrello">
+                <span>
+                    <img class="imgCarrello" src="https://placehold.co/140x160/orange/white" alt="Immagine libro nel carrello">
+                </span>
+                <div class="info">
+                    <p>Titolo: 1984</p>
+                    <p>Autore: George Orwell</p>
+                    <p>Prezzo: €15,00</p>
+                </div>
+                <div class="dati">
+                    <p>Quantità: <input type="number" class="qnt" value="1" min="1"></p>
+                    <p>Totale: €15,00</p>
+                    <p><button class="rimuovi">Rimuovi</button></p>
+                </div>
+            </div>
+        
+            <div class="articoloCarrello">
+                <span>
+                    <img class="imgCarrello" src="https://placehold.co/140x160/orange/white" alt="Immagine libro nel carrello">
+                </span>
+                <div class="info">
+                    <p>Titolo: Il Signore degli Anelli</p>
+                    <p>Autore: J.R.R. Tolkien</p>
+                    <p>Prezzo: €20,00</p>
+                </div>
+                <div class="dati">
+                    <p>Quantità: <input type="number" class="qnt" value="1" min="1"></p>
+                    <p>Totale: €20,00</p>
+                    <p><button class="rimuovi">Rimuovi</button></p>
+                </div>
+            </div>
+        
+            <div class="articoloCarrello">
+                <span>
+                    <img class="imgCarrello" src="https://placehold.co/140x160/orange/white" alt="Immagine libro nel carrello">
+                </span>
+                <div class="info">
+                    <p>Titolo: Orgoglio e Pregiudizio</p>
+                    <p>Autore: Jane Austen</p>
+                    <p>Prezzo: €12,00</p>
+                </div>
+                <div class="dati">
+                    <p>Quantità: <input type="number" class="qnt" value="1" min="1"></p>
+                    <p>Totale: €12,00</p>
+                    <p><button class="rimuovi">Rimuovi</button></p>
+                </div>
+            </div>
+        
+            <div class="articoloCarrello">
+                <span>
+                    <img class="imgCarrello" src="https://placehold.co/140x160/orange/white" alt="Immagine libro nel carrello">
+                </span>
+                <div class="info">
+                    <p>Titolo: Il Grande Gatsby</p>
+                    <p>Autore: F. Scott Fitzgerald</p>
+                    <p>Prezzo: €14,00</p>
+                </div>
+                <div class="dati">
+                    <p>Quantità: <input type="number" class="qnt" value="1" min="1"></p>
+                    <p>Totale: €14,00</p>
+                    <p><button class="rimuovi">Rimuovi</button></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="riepilogo">
+                <h2>Totale Carrello</h2>
+                <p>Totale: <span class="prezzo-totale">€71,00</span></p>
+                <button class="paga">Procedi al Pagamento</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div>
             <div class="footer">
-                <ul>
+                <ul class="rimpall" >
                     Contatti
                     <li>
                         Stefano Alfieri
@@ -61,19 +165,19 @@
                 <ul class="rimpall">
                     Social
                     <li>
-                        <i class="fa-brands fa-facebook"></i> Facebook    
+                        <i class="fa-brands fa-facebook"></i> Facebook
                     </li>
                     <li>
-                        <i class="fa-brands fa-instagram"></i> Instagram    
+                        <i class="fa-brands fa-instagram"></i> Instagram
                     </li>
                     <li>
-                        <i class="fa-brands fa-tiktok"></i>TikTok    
+                        <i class="fa-brands fa-tiktok"></i>TikTok
                     </li>
                     <li>
-                        <i class="fa-brands fa-twitter"></i> Twitter  
+                        <i class="fa-brands fa-twitter"></i> Twitter
                     </li>
                 </ul>
-                </div>
+            </div>
             <p class="cent">&copy; 2024 Book-In. Tutti i diritti riservati.</p>
         </div>
     </footer>

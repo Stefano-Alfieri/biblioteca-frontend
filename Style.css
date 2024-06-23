@@ -2,10 +2,38 @@
     background-color:rgb(58, 23, 114);
     height: 3rem;
     position: fixed;
-    display: block;
+    display: flex;
     width: 100vw;
+    justify-content: space-between;
 }
-.nav li{
+.search{
+    height: 20px;
+    position: relative;
+    top: 12px;
+    right: 2rem;
+    color:rgb(223, 223, 223) ;
+    border-radius: 3px;
+}
+.cerca:hover{
+    color:rgb(207, 139, 1);
+}
+.cerca{
+    background-color:rgb(223, 223, 223) ;
+    border-radius: 3px;
+}
+.back-logo{
+    background-image: none;
+}
+.back-logo:hover{
+    background-image: url(media/logoArancione.png);
+}
+
+
+ul{
+    display: flex;
+
+}
+.nav ul li a{
     display: inline-block;
     margin-left: 2rem;
 }
@@ -13,9 +41,20 @@
 .nav li a:hover{
     color:rgb(207, 139, 1);
 }
-
+li{
+    list-style-type: none;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 15px;
+    right: 50px;
+    float: inline-start;
+    margin: 0px;
+}
 .carrello{
-
+    position: relative;
     padding-right: 3rem;
     text-align: end;
     float: inline-end;
@@ -34,6 +73,7 @@ a{
 .sottotitolo{
     text-align: center;
     color: rgb(58, 23, 114);
+    margin-bottom: 70px;
 }
 body{
     background-color: rgb(223, 223, 223);
@@ -45,22 +85,25 @@ h4{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    margin-left: 40px;
+}
+.card{
+    width: 20%x;
+    height: 75%;
 }
 .border{
     border-style: solid;
     border-color: rgb(58, 23, 114);
+    border-radius: 15px;
+    width: 20%;
+    height: 70%;
 }
 h3{
     color:rgb(207, 139, 1);
 }
 .prossimeuscite{
-    margin-left: 11rem;
-    width: 75vw;
-    height: 50vh;
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly;;
 }
 footer{
 height: 10rem;
@@ -74,11 +117,12 @@ footer div p,ul,li,a {
     text-align: center;
 }
 .footer{
-    display: flex;
+    display:flex;
     justify-content: space-evenly;
 }
 .rimpall{
     list-style-type: none;
+    flex-direction: column;
 }
 .imgProm{
     width: 300px;

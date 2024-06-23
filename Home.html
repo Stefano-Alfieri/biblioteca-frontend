@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="only screen and (max-width: 641px)" href="styleSmallScreen.css">
     <link rel="stylesheet" href="Style.css">
     <script src="https://kit.fontawesome.com/e2d1d32d09.js" crossorigin="anonymous"></script>
     <title>Home</title>
@@ -11,6 +12,9 @@
 <header>
     <nav class="nav">
         <ul>
+            <div class="back-logo">
+                <li class="logo2"><a href="Home.html"><img src="media/logoBianco.png" class="logo" alt="logo"></a></li>
+            </div>
             <li><a href="Home.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
             <li><a href="libri.html">Libri</a></li>
@@ -20,7 +24,13 @@
                 <a href="Carrello.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
         </ul>
+        <div class="search">
+            <input type="submit" class="cerca" value="Cerca">
+        <input type="search" name="Cerca" id="cerca">
+        </div>
+        
     </nav>
+
 </header>
 
 <body>
@@ -28,24 +38,24 @@
     <h2 class="sottotitolo">Promozioni</h2>
     <div class="promozioni">
         <div>
-            <h3>-20% Oscar Mondadori</h3>
+            <h3>-20% Oscar BOOK-IN-AIR</h3>
             <img class="imgProm" src="media/promo_oscar24.gif" alt="Promo oscar">
             <p>Un estate da oscar. 20% di sconto</p>
         </div>
         <div>
-            <h3>Mondadori Extra 2 libri</h3>
-            <img class="imgProm" src="media/promo_extra.gif" alt="extra">
-            <p>I grandi sccessi del gruppo Mondadori, 2 libri a 12,90 euro</p>
+            <h3>BOOK-IN-AIR Extra 2 libri</h3>
+            <img class="imgProm" src="media/EXTRA.png" alt="extra">
+            <p>I grandi sccessi del gruppo Book-in-air, 2 libri a 12,90 euro</p>
         </div>
         <div>
-            <h3>Due albi creativi a 9,90</h3>
-            <img class="imgProm" src="media/promo_activity.gif" alt="activity">
-            <p>Due albi creativi per bambini per imparare divertendosi</p>
+            <h3>La top 10 del mese</h3>
+            <img class="imgProm" src="media/top10.png" alt="activity">
+            <p>La classifica dei libri più venduti di questo mese</p>
         </div>
     </div>
     <h2 class="sottotitolo">Prossime uscite</h2>
     <div class="prossimeuscite">
-        <div class="border">
+        <div class="border" class="card">
             <h4>Sun Tzu-L'arte della guerra</h4>
             <img class="imgLib" src="media/shopping.webp" alt="">
             <h5>Trama:</h5>
@@ -73,7 +83,7 @@
     <footer>
         <div>
             <div class="footer">
-                <ul>
+                <ul class="rimpall" >
                     Contatti
                     <li>
                         Stefano Alfieri
