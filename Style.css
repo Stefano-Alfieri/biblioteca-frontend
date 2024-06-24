@@ -2,10 +2,26 @@
     background-color:rgb(58, 23, 114);
     height: 3rem;
     position: fixed;
+    top: 0px;
+    left: 0px;
     display: flex;
     width: 100vw;
     justify-content: space-between;
     z-index: 999;
+    width: 100%;
+}
+.nav2{
+    padding-left: 1rem;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.menu{
+    display: none;
 }
 .search{
     height: 20px;
@@ -14,6 +30,10 @@
     right: 2rem;
     color:rgb(223, 223, 223) ;
     border-radius: 3px;
+    align-items: center;
+}
+#btnsearch:hover{
+    background-color:rgb(207, 139, 1);
 }
 div a:hover{
     color:rgb(207, 139, 1);
@@ -24,6 +44,7 @@ div a:hover{
 .cerca{
     background-color:rgb(223, 223, 223) ;
     border-radius: 3px;
+    align-items: center;
 }
 .back-logo{
     background-image: url(media/logoBianco.png);

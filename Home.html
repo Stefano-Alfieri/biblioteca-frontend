@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 992px)" href="styleMediumScreen.css">
+    <link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 992px)"
+        href="styleMediumScreen.css">
     <link rel="stylesheet" media="only screen and (max-width: 600px)" href="styleSmallScreen.css">
     <script src="https://kit.fontawesome.com/e2d1d32d09.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <header>
     <nav class="nav">
-        <ul>
+        <input type="checkbox" name="menu" id="check" class="nav2">
+        <label class="nav2" for="check"><i class="fas fa-bars"></i></label>
+        <ul class="nav1">
             <li class="back-logo"></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
@@ -20,13 +23,27 @@
             <li><a href="ebook.html">E-Book</a></li>
             <li><a href="audiolibri.html">Audio Libri</a></li>
         </ul>
-        <div class="search">
-            <input type="submit" class="cerca" value="Cerca">
-            <input type="search" name="Cerca" id="cerca">
-            <a href="Carrello.html"><i style="margin-left: 1rem;" class="fa-solid fa-cart-shopping"></i></a>
-            <a href="account.html"><i style="margin-right: 1rem; margin-left: 1rem;" class="fa-solid fa-user"></i></a>
+
+        <ul class="menu">
+            <div class="nav3">
+                <li class="back-logo"></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="libri.html">Libri</a></li>
+                <li><a href="ebook.html">E-Book</a></li>
+                <li><a href="audiolibri.html">Audio Libri</a></li>
+                <li><a href="Carrello.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="account.html"><i class="fa-solid fa-user"></i></a></li>
+            </div>
+        </ul>
+        <div class="nav1">
+            <input type="submit" class="search" id="btnsearch" style="color: rgb(58, 23, 114);" value="Cerca">
+            <input type="search" class="search" name="Cerca" id="cerca">
+            <a href="Carrello.html" class="search"><i style="margin-left: 1rem;"
+                    class="fa-solid fa-cart-shopping"></i></a>
+            <a href="account.html" class="search"><i style="margin-right: 1rem; margin-left: 1rem;"
+                    class="fa-solid fa-user"></i></a>
         </div>
-        
     </nav>
 
 </header>
@@ -81,7 +98,7 @@
     <footer>
         <div>
             <div class="footer">
-                <ul class="rimpall" >
+                <ul class="rimpall">
                     Contatti
                     <li>
                         S. Alfieri
@@ -90,7 +107,7 @@
                         P. Hanna
                     </li>
                     <li>
-                        F.a Zaccaro
+                        F. Zaccaro
                     </li>
                     <li>
                         M. Perriera
