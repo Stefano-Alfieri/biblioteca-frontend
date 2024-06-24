@@ -1,8 +1,4 @@
-h6 {
-    margin: 5px;
-    font-size: 15px;
-    color: rgb(58, 23, 114);
-}
+
 .sottotitolo{
 
     text-align: center;
@@ -11,6 +7,21 @@ h6 {
 }
 .border:hover {
     background-color:rgb(189, 189, 189); 
-    transform: scale(1.02);  
     border-color: rgb(139, 139, 139);
 }
+.bottone {
+    color: rgb(58, 23, 114);
+    background-color: rgb(191, 161, 237);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+.testo {
+    display: none;
+  }
+  
+  .bottone:focus ~ .testo {
+    display: block;
+  }

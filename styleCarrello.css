@@ -1,21 +1,12 @@
-.imgCarrello {
-
-    border: solid 2px rgb(58, 23, 114);
-    border-radius: 10px;
-}
-
 .rimuovi {
     background-color: rgb(191, 161, 237);
     border-radius: 5px;
     display: fixed;
-    color: rgb(58, 23, 114);
-    border-color: rgb(58, 23, 114);
 }
 
 .rimuovi:hover {
     background-color: rgb(207, 139, 1);
-    color: aliceblue;
-    color:rgb(58, 23, 114) ;
+    color: rgb(58, 23, 114);
 }
 
 .paga {
@@ -26,12 +17,11 @@
     background-color: rgb(191, 161, 237);
     border-radius: 10px;
     color: rgb(58, 23, 114);
-    border-color: rgb(58, 23, 114);
 }
 
 .paga:hover {
 
-
+    color: rgb(58, 23, 114);
     background-color: rgb(207, 139, 1);
 }
 
@@ -43,9 +33,7 @@
 
 }
 
-.imgCarrello {
-    float: left;
-}
+
 
 .articoloCarrello {
     background-color: rgba(76, 76, 76, 0.3);
@@ -66,10 +54,13 @@
     border-radius: 10px;
 }
 
-.articoloCarrello img {
+
+.imgCarrello {
     float: left;
     margin: 10px;
-    
+    border: solid 2px purple;
+    border-radius: 10px;
+
 }
 
 .riepilogo {
@@ -78,16 +69,77 @@
     padding-bottom: 20px;
     border-radius: 10px;
     margin-top: 40px;
+    margin-left: 5px;
 }
 
 .prezzo-totale {
     font-weight: bolder;
     font-size: 30px;
 }
-.riepilogo p{
-    
+
+.riepilogo p {
+
     font-size: 30px;
 }
+
 .qnt {
     width: 50px;
+}
+
+@media screen and (max-width:800px) {
+
+    .cart {
+        display: block;
+    }
+
+    .riepilogo {
+        margin-top: 0;
+        margin-left: 0;
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width:560px) {
+
+    .paga {
+        width: 80%;
+        height: 50px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: rgb(191, 161, 237);
+        border-radius: 10px;
+    }
+    .cart {
+        text-align: center;
+        display: block;
+        justify-content: spae-between;
+        margin-inline-end: 0;
+        margin-inline-start: 0;
+
+    }
+    
+
+    .articoloCarrello {
+        background-color: rgba(76, 76, 76, 0.3);
+        display: block;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 15px;
+        margin-left: 2px;
+        padding: 8px;
+        border-radius: 20px;
+        min-width: auto;
+        /* text-align: center; */
+
+    }
+
+    .imgCarrello {
+        float: none;
+        margin: 10px;
+        width: auto;
+        border: solid 2px purple;
+        border-radius: 10px;
+    }
+
 }

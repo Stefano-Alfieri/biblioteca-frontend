@@ -1,0 +1,16 @@
+.promozioni{
+    flex-direction: column;
+}
+.prossimeuscite{
+    flex-direction: column;
+}
+.border{
+    width: 60%;
+    margin-bottom: 1rem;
+}
+.no{
+    display: none;
+}
+.imgLib{
+    padding-bottom: 1rem;
+}

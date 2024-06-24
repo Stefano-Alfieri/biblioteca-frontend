@@ -1,0 +1,19 @@
+.promozioni{
+    flex-direction: column;
+
+}
+.prossimeuscite{
+    flex-wrap: wrap;
+}
+.border{
+    width: 40%;
+    height: 70%;
+    margin-bottom: 1rem;
+}
+.cardProm{
+    width: 100%;
+    
+}
+.imgProm{
+    width: 70%;
+}
