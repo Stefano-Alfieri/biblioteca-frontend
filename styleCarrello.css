@@ -86,10 +86,12 @@
     width: 50px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:811px) {
 
     .cart {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     .riepilogo {
@@ -110,15 +112,18 @@
         background-color: rgb(191, 161, 237);
         border-radius: 10px;
     }
+
     .cart {
         text-align: center;
-        display: block;
-        justify-content: spae-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         margin-inline-end: 0;
         margin-inline-start: 0;
 
     }
-    
+
 
     .articoloCarrello {
         background-color: rgba(76, 76, 76, 0.3);
