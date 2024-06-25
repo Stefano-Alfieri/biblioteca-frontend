@@ -26,7 +26,7 @@
 .nav2:checked ~ .menu{
 display: block;
 position: relative;
-right: 14rem;
+right: 55%;
 }
 .nav1{
     display: none;
