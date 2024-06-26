@@ -46,3 +46,27 @@ width: 100%;
 padding-bottom: 10px;
 padding-right: 10px;
 }
+.FormAccesso{
+    width: 50%;
+}
+.footer{
+    margin-top: 30%;
+}
+
+
+.main-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-form,
+.mappaeinfo {
+    width: 100%;
+    max-width: 600px;
+}
+
+.infocontatto {
+    text-align: left;
+}

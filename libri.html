@@ -6,56 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="styleLibri.css">
-    <link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 992px)" href="styleMediumScreen.css">
+    <link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 992px)"
+        href="styleMediumScreen.css">
     <link rel="stylesheet" media="only screen and (max-width: 600px)" href="styleSmallScreen.css">
     <script src="https://kit.fontawesome.com/e2d1d32d09.js" crossorigin="anonymous"></script>
     <title>Libri</title>
 </head>
-<header>
-    <nav class="nav">
-        <input type="checkbox" name="menu" id="check" class="nav2">
-        <label class="nav2" for="check"><i class="fas fa-bars"></i></label>
-        <ul class="nav1">
-            <li class="back-logo"></li>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-            <li><a href="libri.html">Libri</a></li>
-            <li><a href="ebook.html">E-Book</a></li>
-            <li><a href="audiolibri.html">Audio Libri</a></li>
-        </ul>
 
-        <ul class="menu">
-            <div class="nav3">
+<body>
+    <header>
+        <nav class="nav">
+            <input type="checkbox" name="menu" id="check" class="nav2">
+            <label class="nav2" for="check"><i class="fas fa-bars"></i></label>
+            <ul class="nav1">
                 <li class="back-logo"></li>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="contatti.html">Contatti</a></li>
                 <li><a href="libri.html">Libri</a></li>
                 <li><a href="ebook.html">E-Book</a></li>
                 <li><a href="audiolibri.html">Audio Libri</a></li>
-                <li><a href="Carrello.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="account.html"><i class="fa-solid fa-user"></i></a></li>
-            </div>
-        </ul>
-        <div class="nav1">
-            <input type="submit" class="search" id="btnsearch" style="color: rgb(58, 23, 114);" value="Cerca">
-            <input type="search" class="search" name="Cerca" id="cerca">
-            <a href="Carrello.html" class="search"><i style="margin-left: 1rem;"
-                    class="fa-solid fa-cart-shopping"></i></a>
-            <a href="account.html" class="search"><i style="margin-right: 1rem; margin-left: 1rem;"
-                    class="fa-solid fa-user"></i></a>
-        </div>
-    </nav>
+            </ul>
 
-</header>
-<body>
+            <ul class="menu">
+                <div class="nav3">
+                    <li class="back-logo"></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="libri.html">Libri</a></li>
+                    <li><a href="ebook.html">E-Book</a></li>
+                    <li><a href="audiolibri.html">Audio Libri</a></li>
+                    <li><a href="Carrello.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="account.html"><i class="fa-solid fa-user"></i></a></li>
+                </div>
+            </ul>
+            <div class="nav1">
+                <input type="submit" class="search" id="btnsearch" style="color: rgb(58, 23, 114);" value="Cerca">
+                <input type="search" class="search" name="Cerca" id="cerca">
+                <a href="Carrello.html" class="search"><i style="margin-left: 1rem;"
+                        class="fa-solid fa-cart-shopping"></i></a>
+                <a href="account.html" class="search"><i style="margin-right: 1rem; margin-left: 1rem;"
+                        class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+
+    </header>
+
     <h1 class="titolo">BOOK-IN-AIR</h1>
     <h2 class="sottotitolo">Libri</h2>
     <div class="prossimeuscite">
-        
+
         <div class="border">
             <h4>Eiichiro Oda - One piece</h4>
             <h5 class="no">Star Comics</h5>
-            <img class="imgLib" src="media/one-piece.jpg" alt="">
+            <a href="paginalibro.html">
+                <img class="imgLib" src="media/one-piece.jpg" alt="">
+            </a>
             <input type="button" value="Trama:" class="bottone">
             <p class="testo">La serie di One Piece ha goduto di un ...</p>
         </div>
@@ -81,7 +86,7 @@
             <img class="imgLib" src="media/shopping (3).webp" alt="">
             <input type="button" value="Trama:" class="bottone">
             <p class="testo">Un vecchio re solitario, che ama dare or...</p>
- 
+
         </div>
     </div>
     <div class="prossimeuscite" style="padding-top: 1rem;">
@@ -121,8 +126,8 @@
     <footer>
         <div>
             <div class="footer">
-                <ul class="rimpall" >
-                    Contatti
+                <ul class="rimpall sep">
+                    <p class="sep"> Contatti:</p>
                     <li>
                         S. Alfieri
                     </li>
@@ -136,8 +141,26 @@
                         M. Perriera
                     </li>
                 </ul>
-                <ul class="rimpall">
-                    Menu
+                <ul class="rimpall sep nope">
+                    <p class="sep"> Orari:</p>
+                    <li>
+                        Lun:9/21
+                    </li>
+                    <li>
+                        Mart:9/21
+                    </li>
+                    <li>
+                        Merc:9/21
+                    </li>
+                    <li>
+                        Giov:9/21
+                    </li>
+                    <li>
+                        Ven-sab-dom: chiusi
+                    </li>
+                </ul>
+                <ul class="rimpall sep">
+                    <p class="sep"> Menu:</p>
                     <li>
                         <a href="Home.html">Home</a>
                     </li>
@@ -151,8 +174,8 @@
                         <a href="Carrello.html">Carrello</a>
                     </li>
                 </ul>
-                <ul class="rimpall">
-                    Social
+                <ul class="rimpall ">
+                    <p class="sep"> Social:</p>
                     <li>
                         <i class="fa-brands fa-facebook"></i> Facebook
                     </li>

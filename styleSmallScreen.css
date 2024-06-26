@@ -43,3 +43,50 @@ width: 100%;
 padding-bottom: 10px;
 padding-right: 10px;
 }
+.FormAccesso{
+    width: 90%;
+}
+.nope{
+    display: none;
+}
+.imgCov{
+    width: 100%;
+    height: 65%;
+}
+.cover{
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+
+.main-content {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+}
+.contact-form{
+    width: 90%;
+    height: 50%;
+}
+
+.mappa {
+    width: 50%;
+}
+
+.infocontatto {
+    text-align: left;
+}
+.dio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mapdim{
+    height: 50%;
+    width: 80%;
+}
+.mappaeinfo{
+    justify-content: center;
+}

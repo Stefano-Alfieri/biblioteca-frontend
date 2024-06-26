@@ -1,85 +1,85 @@
-
 body {
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
+
 .main-content {
     display: flex;
     padding-top: 4rem;
-    justify-content: center;
-    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    float: left;
     flex-wrap: wrap;
-    gap: 20px;
-
+    gap: 5px;
+    box-sizing: border-box;
+    width: 60%;
+    max-width: 700px;
+    padding: 10px;
 }
+
 .contact-form {
     background: #fff;
+    margin-top: 4rem;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgb(58, 23, 114);
     width: 100%;
+    flex: 1 1 300px;
     max-width: 600px;
     min-width: 300px;
-    margin-bottom: 20px;
-    text-align: left; 
+    margin-bottom: 5px;
+    text-align: left;
     box-sizing: border-box;
 
 }
 
 .main-content h3 {
     color: rgb(58, 23, 114);
-    justify-content: center; 
-
-    }
-
-.mappa {
-    flex: 1;
-    min-width: 300px;
-    justify-content: center; 
 }
-.infocontatto {
-    margin-top: 20px; 
-    text-align: left;
-}
+
 .contact-form h2 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
 }
+
 .contact-form label {
     display: block;
     margin-bottom: 8px;
 }
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    max-width: 500px;
-    width: 95%;
-    margin-top: 5px;
     box-sizing: border-box;
 }
+
 .privacycheckbox {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     padding: 0;
-    float:inline-start;
+    float: inline-start;
 }
 
 .privacycheckbox label {
-    margin-left: 1px;  
-    font-size: 10px; 
+    margin-left: 5px;
+    font-size: 10px;
 }
+
 .contact-form button {
     background-color: rgb(58, 23, 114);
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
-    cursor: pointer; 
+    cursor: pointer;
     align-items: center;
 }
 
@@ -90,28 +90,27 @@ body {
 .mappaeinfo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex: 1 1 100px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 600px;
+}
+
+.mappaeinfo h3 {
+    margin-top: 1px;
 }
 
 .mappa {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    width: 80%;
+    margin-bottom: 5px;
 }
 
 .infocontatto {
-    width: 100%;
-    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 1rem;
     text-align: left;
+    width: 100%;
 }
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
-    .contact-info {
-        text-align: center; 
-    }
-    .mapp{
-        width:  100%;
-    }
-}
+
